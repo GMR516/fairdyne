@@ -11,12 +11,12 @@ function SplashScene() {
 	this.by_sprite.anchor.set(0.5, 0.5);
 	this.by_sprite.position.set(320, 240);
 	this.by_sprite.alpha = 0;
-    
+    /*
 	this.un_sprite = new PIXI.Sprite(un_texture);
 	this.un_sprite.anchor.set(0, 1);
 	this.un_sprite.position.set(160, -120);
 	this.un_sprite.scale.set(2, 2);
-
+*/
 	this.fairdyne_sprite = new PIXI.Sprite(fairdyne_texture);
 	this.fairdyne_sprite.anchor.set(0.5, 0.5);
 	this.fairdyne_sprite.position.set(320, 240);
@@ -58,7 +58,7 @@ function SplashScene() {
 	this.press_start_text.alpha = 0;
 
 	splash_stage.addChild(this.by_sprite);
-	splash_stage.addChild(this.un_sprite);
+	//splash_stage.addChild(this.un_sprite);
 	splash_stage.addChild(this.fairdyne_sprite);
 	splash_stage.addChild(this.ground_sprite1);
 	splash_stage.addChild(this.ground_sprite2);
@@ -154,7 +154,7 @@ SplashScene.prototype.update = function(delta_ms) {
 		}
 		this.flash_g.alpha = interp_clamp(scene.scene_time, 8520, 8820, 1, 0);
 		this.undyne_sprite.position.y = 360 - 1080 * interp_clamp(scene.scene_time, 8520, 9000, 0, 1);
-		this.un_sprite.position.y = -780 + 1060 * Math.pow(interp_clamp(scene.scene_time, 9000, 10500, 0, 1), 2);
+		//this.un_sprite.position.y = -780 + 1060 * Math.pow(interp_clamp(scene.scene_time, 9000, 10500, 0, 1), 2);
 	} else if (scene.scene_time < 12000) {
 		if (this.undyne_jumped == false) {
 			this.undyne_jumped = true;
