@@ -155,7 +155,7 @@ SplashScene.prototype.update = function(delta_ms) {
 		this.flash_g.alpha = interp_clamp(scene.scene_time, 8520, 8820, 1, 0);
 		this.undyne_sprite.position.y = 360 - 1080 * interp_clamp(scene.scene_time, 8520, 9000, 0, 1);
 		//this.un_sprite.position.y = -780 + 1060 * Math.pow(interp_clamp(scene.scene_time, 9000, 10500, 0, 1), 2);
-	} else if (scene.scene_time < 11000) {
+	} else if (scene.scene_time < 11500) {
 		if (this.undyne_jumped == false) {
 			this.undyne_jumped = true;
 			splash_stage.removeChild(this.undyne_sprite);
