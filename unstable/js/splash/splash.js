@@ -11,12 +11,12 @@ function SplashScene() {
 	this.by_sprite.anchor.set(0.5, 0.5);
 	this.by_sprite.position.set(320, 240);
 	this.by_sprite.alpha = 0;
-/*
+    
 	this.un_sprite = new PIXI.Sprite(un_texture);
 	this.un_sprite.anchor.set(0, 1);
 	this.un_sprite.position.set(160, -120);
 	this.un_sprite.scale.set(2, 2);
-*/
+
 	this.fairdyne_sprite = new PIXI.Sprite(fairdyne_texture);
 	this.fairdyne_sprite.anchor.set(0.5, 0.5);
 	this.fairdyne_sprite.position.set(320, 240);
