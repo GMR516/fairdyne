@@ -11,12 +11,12 @@ function SplashScene() {
 	this.by_sprite.anchor.set(0.5, 0.5);
 	this.by_sprite.position.set(320, 240);
 	this.by_sprite.alpha = 0;
-
+/*
 	this.un_sprite = new PIXI.Sprite(un_texture);
 	this.un_sprite.anchor.set(0, 1);
 	this.un_sprite.position.set(160, -120);
 	this.un_sprite.scale.set(2, 2);
-
+*/
 	this.fairdyne_sprite = new PIXI.Sprite(fairdyne_texture);
 	this.fairdyne_sprite.anchor.set(0.5, 0.5);
 	this.fairdyne_sprite.position.set(320, 240);
@@ -165,9 +165,9 @@ SplashScene.prototype.update = function(delta_ms) {
 			//Change the text to Unfair Undyne. I don't want this, it's fair now. ;P
 			//document.getElementById("fairdyne").innerHTML = "Unfair Undyne";
 		}
-		this.un_sprite.position.y = -780 + 1060 * Math.pow(interp_clamp(scene.scene_time, 9000, 10500, 0, 1), 2);
+		/*this.un_sprite.position.y = -780 + 1060 * Math.pow(interp_clamp(scene.scene_time, 9000, 10500, 0, 1), 2);
 		this.un_sprite.position.x = 140 + 20 * Math.pow(interp_clamp(scene.scene_time, 10500, 10700, 1, 0), 2);
-		this.un_sprite.rotation = -0.3 * (1 - Math.pow(interp_clamp(scene.scene_time, 10500, 10900, -1, 1), 4));
+		this.un_sprite.rotation = -0.3 * (1 - Math.pow(interp_clamp(scene.scene_time, 10500, 10900, -1, 1), 4));*/
 		this.fairdyne_sprite.position.x = 400 - 80 * Math.pow(interp_clamp(scene.scene_time, 10500, 10700, 1, 0), 2);
 		this.undyne_sprite.position.y = 160 - 400 * interp_clamp(scene.scene_time, 11400, 12000, 1, 0);
 		this.undyne_hair_sprite.position.y = 60 - 400 * interp_clamp(scene.scene_time, 11400, 12000, 1, 0);
